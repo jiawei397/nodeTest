@@ -7,7 +7,6 @@ var $ = require('jquery');
 $(function () {
     $("#bt").click(function () {
         $.get("/jquery/test1.json", function (data) {
-            console.log(data);
             $("#myDiv").text(data)
         });
     });
